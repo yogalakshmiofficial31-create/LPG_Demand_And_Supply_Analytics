@@ -1,257 +1,425 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import plotly.express as px
-import plotly.graph_objects as go
 import os
 
-# --------------------------------------------------------
-# 1. PAGE CONFIGURATION & STYLING
-# --------------------------------------------------------
+# ---------------------------------------------------
+# Page Configuration
+# ---------------------------------------------------
 st.set_page_config(
-    page_title="LPG Demand, Supply & Service Quality Dashboard",
-    page_icon="🔥",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    page_title="LPG Supply Chain & Distribution Analytics",
+    page_icon="📊",
+    layout="wide"
 )
 
-st.markdown("""
-    <style>
-    .main-title { font-size:36px; font-weight:bold; color:#1E3A8A; margin-bottom:5px; }
-    .sub-title { font-size:16px; color:#555555; margin-bottom:25px; }
-    .metric-box { background-color:#F8FAFC; padding:15px; border-radius:10px; border: 1px solid #E2E8F0; }
-    .alert-box { background-color:#FEF2F2; padding:15px; border-radius:10px; border: 1px solid #FEE2E2; color:#991B1B; }
-    </style>
-""", unsafe_allow_html=True)
+# ---------------------------------------------------
+# Load Dataset
+# ---------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "datasets", "cleaned_dataset.csv")
 
-# --------------------------------------------------------
-# 2. DATA LOADING & PREPROCESSING (Path-Safe Version)
-# --------------------------------------------------------
 @st.cache_data
-def load_and_clean_data():
-    # Automatically finds the CSV file whether you run from parent or source directory
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # Try looking in the same folder as app.py first, then look one folder up
-    path_options = [
-        os.path.join(current_dir, "cleaned_dataset.csv"),
-        os.path.join(current_dir, "..", "cleaned_dataset.csv")
-    ]
-    
-    df_loaded = None
-    for path in path_options:
-        if os.path.exists(path):
-            df_loaded = pd.read_csv(path)
-            break
-            
-    if df_loaded is None:
-        raise FileNotFoundError("Could not find cleaned_dataset.csv in app directory or parent directory.")
+def load_data():
+    return pd.read_csv(DATA_PATH)
 
-    # Fill missing values identically to notebook
-    if "Iran_Israel_Conflict_Level" in df_loaded.columns:
-        df_loaded["Iran_Israel_Conflict_Level"] = df_loaded["Iran_Israel_Conflict_Level"].fillna("No Conflict")
-    if "Festival" in df_loaded.columns:
-        df_loaded["Festival"] = df_loaded["Festival"].fillna("No Festival")
-        
-    return df_loaded
+df = load_data()
 
-# Global Initialization Guard
-try:
-    df = load_and_clean_data()
-except Exception as e:
-    st.error("❌ **Dataset Location Error:** Could not find 'cleaned_dataset.csv'.")
-    st.info("💡 **Quick Fix:** Please make sure your `cleaned_dataset.csv` file is placed in the folder along with your `app.py` script.")
-    st.stop()
+# ---------------------------------------------------
+# Sidebar Filters
+# ---------------------------------------------------
+st.sidebar.title("Dashboard Filters")
 
-# --------------------------------------------------------
-# 3. SIDEBAR CONTROLS & FILTERS
-# --------------------------------------------------------
-st.sidebar.header("Dashboard Filters")
+year = st.sidebar.multiselect(
+    "Select Year",
+    sorted(df["Year"].unique()),
+    default=sorted(df["Year"].unique())
+)
 
-available_years = sorted(df["Year"].unique().tolist())
-selected_years = st.sidebar.multiselect("Select Year(s)", options=available_years, default=available_years)
+state = st.sidebar.multiselect(
+    "Select State",
+    sorted(df["State"].unique()),
+    default=sorted(df["State"].unique())
+)
 
-available_states = sorted(df["State"].unique().tolist())
-selected_states = st.sidebar.multiselect("Select State(s)", options=available_states, default=available_states)
+customer = st.sidebar.multiselect(
+    "Customer Type",
+    sorted(df["Customer_Type"].unique()),
+    default=sorted(df["Customer_Type"].unique())
+)
 
-customer_types = sorted(df["Customer_Type"].unique().tolist())
-selected_cust_types = st.sidebar.multiselect("Customer Type", options=customer_types, default=customer_types)
-
-# Securely apply filter cuts
 filtered_df = df[
-    (df["Year"].isin(selected_years if selected_years else available_years)) &
-    (df["State"].isin(selected_states if selected_states else available_states)) &
-    (df["Customer_Type"].isin(selected_cust_types if selected_cust_types else customer_types))
+    (df["Year"].isin(year)) &
+    (df["State"].isin(state)) &
+    (df["Customer_Type"].isin(customer))
 ]
 
-# --------------------------------------------------------
-# 4. HEADER SECTION & RISK ALERTS
-# --------------------------------------------------------
-st.markdown('<p class="main-title">LPG Demand & Operational Supply Chain Dashboard</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">Strategic performance insight report tailored for executive stakeholders</p>', unsafe_allow_html=True)
+# ---------------------------------------------------
+# Dashboard Title
+# ---------------------------------------------------
+st.title("📦 LPG Supply Chain & Distribution Analytics")
 
-delayed_shipments = filtered_df[filtered_df["Shipment_Delay_Days"] > 3]
-pct_delayed = (len(delayed_shipments) / len(filtered_df) * 100) if len(filtered_df) > 0 else 0
-
-if pct_delayed > 15:
-    st.markdown(
-        f'<div class="alert-box">⚠️ <b>Logistical Bottleneck Warning:</b> {pct_delayed:.1f}% of shipments '
-        f'are experiencing delays over 3 days. Review the Geopolitical Strain breakdown below to adjust buffer stock.</div>', 
-        unsafe_allow_html=True
-    )
-    st.markdown("<br>", unsafe_allow_html=True)
+st.markdown(
+"""
+Business Dashboard for Monitoring LPG Demand, Supply,
+Revenue, Delivery Performance and Geopolitical Risks.
+"""
+)
 
 st.markdown("---")
 
-# --------------------------------------------------------
-# 5. KPI SUMMARY METRICS
-# --------------------------------------------------------
-total_requested = filtered_df["Cylinders_Requested"].sum()
-total_delivered = filtered_df["Cylinders_Delivered"].sum()
-fulfillment_rate = (total_delivered / total_requested * 100) if total_requested > 0 else 0
-total_complaints = filtered_df["Consumer_Complaints"].sum()
+# ---------------------------------------------------
+# KPI Cards
+# ---------------------------------------------------
+
+delivery_rate = (
+    filtered_df["Cylinders_Delivered"].sum()
+    / filtered_df["Cylinders_Requested"].sum()
+) * 100
+
+avg_delay = filtered_df["Shipment_Delay_Days"].mean()
+
+avg_price = filtered_df["Domestic_LPG_Price"].mean()
+
+total_revenue = filtered_df["Revenue"].sum()
+
 total_profit = filtered_df["Profit"].sum()
 
-kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
+complaints = filtered_df["Consumer_Complaints"].sum()
 
-with kpi1:
-    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
-    st.metric(label="Total Demand (Cylinders)", value=f"{total_requested:,}")
-    st.markdown('</div>', unsafe_allow_html=True)
-with kpi2:
-    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
-    st.metric(label="Total Delivered", value=f"{total_delivered:,}")
-    st.markdown('</div>', unsafe_allow_html=True)
-with kpi3:
-    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
-    st.metric(label="Fulfillment Rate", value=f"{fulfillment_rate:.2f}%")
-    st.markdown('</div>', unsafe_allow_html=True)
-with kpi4:
-    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
-    st.metric(label="Consumer Complaints", value=f"{total_complaints:,}")
-    st.markdown('</div>', unsafe_allow_html=True)
-with kpi5:
-    st.markdown('<div class="metric-box">', unsafe_allow_html=True)
-    st.metric(label="Net Profit Margin", value=f"₹{total_profit:,.2f}")
-    st.markdown('</div>', unsafe_allow_html=True)
+col1,col2,col3,col4,col5,col6 = st.columns(6)
 
-st.markdown("<br>", unsafe_allow_html=True)
+col1.metric(
+    "Revenue",
+    f"₹ {total_revenue:,.0f}"
+)
 
-# --------------------------------------------------------
-# 6. STAKEHOLDER GRAPH VISUALIZATIONS
-# --------------------------------------------------------
-col_left, col_right = st.columns([1, 1])
+col2.metric(
+    "Profit",
+    f"₹ {total_profit:,.0f}"
+)
 
-with col_left:
-    st.subheader("📍 Demand Intensity & Resource Prioritization by State")
-    state_demand = filtered_df.groupby("State")["Cylinders_Requested"].sum().reset_index()
-    
-    fig_demand = px.bar(
-        state_demand,
-        x="Cylinders_Requested",
-        y="State",
-        orientation='h',
-        title="Total LPG Cylinder Demand by State",
-        labels={"Cylinders_Requested": "Requested Volumes", "State": "State / Region"},
-        color="Cylinders_Requested",
-        color_continuous_scale="Blugrn"
-    )
-    fig_demand.update_layout(yaxis={'categoryorder': 'total ascending'}, template="plotly_white", height=400)
-    # Updated parameter here for compatibility
-    st.plotly_chart(fig_demand, width='stretch')
+col3.metric(
+    "Delivery Rate",
+    f"{delivery_rate:.1f}%"
+)
 
-with col_right:
-    st.subheader("👥 Service Quality & Customer Dissatisfaction Analysis")
-    fig_complaints = px.scatter(
-        filtered_df,
-        x="Shipment_Delay_Days",
-        y="Consumer_Complaints",
-        size="Cylinders_Requested",
-        color="State",
-        title="Complaints vs. Shipment Delay Days (Size = Order Volume)",
-        labels={"Shipment_Delay_Days": "Delay (Days)", "Consumer_Complaints": "Registered Complaints"},
-        template="plotly_white"
-    )
-    fig_complaints.update_layout(height=400)
-    # Updated parameter here for compatibility
-    st.plotly_chart(fig_complaints, width='stretch')
+col4.metric(
+    "Avg Delay",
+    f"{avg_delay:.1f} Days"
+)
+
+col5.metric(
+    "Complaints",
+    f"{complaints:,}"
+)
+
+col6.metric(
+    "Avg LPG Price",
+    f"₹ {avg_price:.0f}"
+)
 
 st.markdown("---")
 
-col_macro1, col_macro2 = st.columns(2)
+# =====================================================
+# CHART ROW 1
+# =====================================================
 
-with col_macro1:
-    fig_oil = px.scatter(
+col1, col2 = st.columns(2)
+
+with col1:
+
+    demand = filtered_df.groupby("Month")[["Cylinders_Requested","Cylinders_Delivered"]].sum().reset_index()
+
+    fig = px.bar(
+        demand,
+        x="Month",
+        y=["Cylinders_Requested","Cylinders_Delivered"],
+        barmode="group",
+        title="Demand vs Cylinders Delivered",
+        color_discrete_sequence=["#1f77b4","#2ca02c"]
+    )
+
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+with col2:
+
+    revenue = filtered_df.groupby("Month")["Revenue"].sum().reset_index()
+
+    fig = px.line(
+        revenue,
+        x="Month",
+        y="Revenue",
+        markers=True,
+        title="Monthly Revenue Trend"
+    )
+
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+# =====================================================
+# CHART ROW 2
+# =====================================================
+
+col3, col4 = st.columns(2)
+
+with col3:
+
+    profit = filtered_df.groupby("Month")["Profit"].sum().reset_index()
+
+    fig = px.area(
+        profit,
+        x="Month",
+        y="Profit",
+        title="Monthly Profit Trend"
+    )
+
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+with col4:
+
+    delay = filtered_df.groupby("Month")["Shipment_Delay_Days"].mean().reset_index()
+
+    fig = px.line(
+        delay,
+        x="Month",
+        y="Shipment_Delay_Days",
+        markers=True,
+        title="Average Shipment Delay"
+    )
+
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+# =====================================================
+# CHART ROW 3
+# =====================================================
+
+col5, col6 = st.columns(2)
+
+with col5:
+
+    fig = px.scatter(
         filtered_df,
         x="Oil_Price_USD",
         y="Domestic_LPG_Price",
-        color="Customer_Type",
-        trendline="ols",
-        title="Domestic LPG Cylinder Price vs. Global Crude Oil Price",
-        labels={"Oil_Price_USD": "Crude Oil Price ($/Barrel)", "Domestic_LPG_Price": "Domestic Cylinder Price (INR)"},
-        template="plotly_white"
+        color="Iran_Israel_Conflict_Level",
+        size="Shipment_Delay_Days",
+        hover_name="State",
+        title="Oil Price vs Domestic LPG Price"
     )
-    # Updated parameter here for compatibility
-    st.plotly_chart(fig_oil, width='stretch')
 
-with col_macro2:
-    state_subsidy = filtered_df.groupby("State")["Subsidy_Amount"].mean().reset_index()
-    fig_subsidy = px.bar(
-        state_subsidy,
-        x="State",
-        y="Subsidy_Amount",
-        title="Average Government Subsidy Cushion Provided per State",
-        labels={"Subsidy_Amount": "Avg Subsidy Amount (INR)"},
-        template="plotly_white",
-        color="Subsidy_Amount",
-        color_continuous_scale="YlOrRd"
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+with col6:
+
+    fig = px.box(
+        filtered_df,
+        x="Iran_Israel_Conflict_Level",
+        y="Shipment_Delay_Days",
+        color="Iran_Israel_Conflict_Level",
+        title="Conflict Level vs Shipment Delay"
     )
-    # Updated parameter here for compatibility
-    st.plotly_chart(fig_subsidy, width='stretch')
+
+    fig.update_layout(height=450)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+# =====================================================
+# CHART ROW 4
+# =====================================================
+
+col7, col8 = st.columns(2)
+
+with col7:
+
+    state_rev = filtered_df.groupby("State")["Revenue"].sum().reset_index()
+
+    state_rev = state_rev.sort_values(
+        by="Revenue",
+        ascending=False
+    )
+
+    fig = px.bar(
+        state_rev,
+        x="Revenue",
+        y="State",
+        orientation="h",
+        title="Revenue by State"
+    )
+
+    fig.update_layout(height=500)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+with col8:
+
+    complaints = filtered_df.groupby("State")["Consumer_Complaints"].sum().reset_index()
+
+    complaints = complaints.sort_values(
+        by="Consumer_Complaints",
+        ascending=False
+    )
+
+    fig = px.bar(
+        complaints,
+        x="Consumer_Complaints",
+        y="State",
+        orientation="h",
+        title="Consumer Complaints by State",
+        color="Consumer_Complaints"
+    )
+
+    fig.update_layout(height=500)
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # =====================================================
+# EXECUTIVE INSIGHTS
+# =====================================================
 
 st.markdown("---")
-st.subheader("⛓️ Supply Chain Disruption & Chokepoint Tracking")
-fig_delay = px.box(
-    filtered_df,
-    x="Strait_of_Hormuz_Status",
-    y="Shipment_Delay_Days",
-    color="Iran_Israel_Conflict_Level",
-    title="Impact of Maritime Chokepoint Conditions on Delay Windows",
-    labels={"Strait_of_Hormuz_Status": "Strait of Hormuz Status", "Shipment_Delay_Days": "Transit Delays (Days)"},
-    template="plotly_white"
+st.header("📋 Executive Business Insights")
+
+highest_revenue_state = (
+    filtered_df.groupby("State")["Revenue"]
+    .sum()
+    .idxmax()
 )
-# Updated parameter here for compatibility
-st.plotly_chart(fig_delay, width='stretch')
 
-# --------------------------------------------------------
-# 7. ROOT CAUSE LAYMAN INSIGHTS & STRATEGIC RECOMMENDATIONS
-# --------------------------------------------------------
+highest_profit_state = (
+    filtered_df.groupby("State")["Profit"]
+    .sum()
+    .idxmax()
+)
+
+highest_delay_state = (
+    filtered_df.groupby("State")["Shipment_Delay_Days"]
+    .mean()
+    .idxmax()
+)
+
+highest_complaints_state = (
+    filtered_df.groupby("State")["Consumer_Complaints"]
+    .sum()
+    .idxmax()
+)
+
+delivery_rate = (
+    filtered_df["Cylinders_Delivered"].sum()
+    / filtered_df["Cylinders_Requested"].sum()
+) * 100
+
+st.success(f"""
+### Key Business Insights
+
+✅ Highest Revenue State : **{highest_revenue_state}**
+
+💰 Highest Profit State : **{highest_profit_state}**
+
+🚚 Highest Shipment Delay : **{highest_delay_state}**
+
+☎ Highest Consumer Complaints : **{highest_complaints_state}**
+
+📦 Overall Delivery Rate : **{delivery_rate:.2f}%**
+
+""")
+
+# =====================================================
+# TOP 5 STATES
+# =====================================================
+
 st.markdown("---")
-st.header("🎯 Root Cause Analysis & Action Plan")
+st.subheader("🏆 Top 5 Revenue Generating States")
 
-insight_col, rec_col = st.columns(2)
+top5 = (
+    filtered_df.groupby("State")["Revenue"]
+    .sum()
+    .sort_values(ascending=False)
+    .head(5)
+    .reset_index()
+)
 
-with insight_col:
-    st.subheader("💡 What the Data is Telling Us (Layman Insights)")
-    st.markdown("""
-    * **Where the System Breaks:** Regional logistics hubs in **Rajasthan, Andhra Pradesh, and Odisha** are under-resourced. They experience the highest volumes of orders left unfulfilled.
-    * **The Root Cause Trigger:** Local distribution delays are tightly tied to global market stress. When maritime chokepoints close up, our inbound shipping windows instantly degrade from **3 days up to 12 days**.
-    * **The Customer Fallout:** Customer anger tracks these delivery lags directly. The moment a shipment takes longer than 5 days, customer complaints double as families and commercial users face cooking gas shortages.
-    """)
+fig = px.bar(
+    top5,
+    x="State",
+    y="Revenue",
+    color="Revenue",
+    text_auto=".2s",
+    title="Top 5 States by Revenue"
+)
 
-with rec_col:
-    st.subheader("🛠️ Strategic Recommendations for Leadership")
-    st.markdown("""
-    1. **Build a Geopolitical 'Buffer Stock':** When conflict levels move to *Medium*, regional distribution hubs in **Karnataka** and **Andhra Pradesh** must proactively build a 10-day safety stock cushion of physical cylinders to absorb shipping delays.
-    2. **Re-route Logistics Assets to Bottleneck States:** Shift excess distribution trucks and fleet capacity dynamically into **Rajasthan** and **Odisha** to clear out their unfulfilled backlog metrics.
-    3. **Implement Automated Delay Warnings:** Since complaints track delays almost perfectly, send automated SMS alerts to consumers when a global supply disruption occurs. Proactive communication manages expectations before complaints are filed.
-    """)
+st.plotly_chart(fig, use_container_width=True)
 
-# --------------------------------------------------------
-# 8. RAW DATA ACCESS TABLE
-# --------------------------------------------------------
+# =====================================================
+# FESTIVAL ANALYSIS
+# =====================================================
+
 st.markdown("---")
-st.subheader("🗂️ Granular Data Explorer")
-with st.expander("Click to expand and inspect filtered row records"):
-    # Updated parameter here for compatibility
-    st.dataframe(filtered_df, width='stretch')
+st.subheader("🎉 Festival vs LPG Demand")
+
+festival = (
+    filtered_df.groupby("Festival")["Cylinders_Requested"]
+    .sum()
+    .reset_index()
+)
+
+fig = px.pie(
+    festival,
+    names="Festival",
+    values="Cylinders_Requested",
+    hole=0.5,
+    title="Festival-wise LPG Demand"
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+# =====================================================
+# DOWNLOAD DATA
+# =====================================================
+
+st.markdown("---")
+
+csv = filtered_df.to_csv(index=False).encode("utf-8")
+
+st.download_button(
+    label="📥 Download Filtered Dataset",
+    data=csv,
+    file_name="LPG_Dashboard_Report.csv",
+    mime="text/csv"
+)
+
+# =====================================================
+# FOOTER
+# =====================================================
+
+st.markdown("---")
+
+st.markdown(
+"""
+<center>
+
+### LPG Supply Chain & Distribution Analytics
+
+Developed using Streamlit • Plotly • Python
+
+Educational Project
+
+</center>
+""",
+unsafe_allow_html=True
+)
