@@ -67,7 +67,7 @@ The project answers the following business questions:
 **Question:** Which states have the highest LPG demand?
 
 **Insight:** High-demand states require better inventory planning and cylinder allocation to reduce shortages and improve delivery performance.
-![alt text](<Screenshot 2026-07-03 074232.png>)
+![alt text](img/img-1.png)
 
 ---
 
@@ -76,6 +76,7 @@ The project answers the following business questions:
 **Question:** Which customer segment drives the highest LPG demand?
 
 **Insight:** Understanding customer demand helps prioritize distribution and improve resource allocation.
+![alt text](img/img-2.png)
 
 ---
 
@@ -84,6 +85,7 @@ The project answers the following business questions:
 **Question:** How do shipment delays affect customer complaints?
 
 **Insight:** Customer complaints increase as shipment delays increase, highlighting the importance of timely deliveries.
+![alt text](img/img-3.png)
 
 ---
 
@@ -92,7 +94,7 @@ The project answers the following business questions:
 **Question:** How do international conflicts and shipping disruptions affect LPG delivery?
 
 **Insight:** Geopolitical events can increase shipment delays, making supply chain diversification and safety stock planning essential.
-
+![alt text](img/img-4.png)
 ---
 
 ### 5. Macroeconomic Driver Analysis
@@ -100,7 +102,7 @@ The project answers the following business questions:
 **Question:** How do global oil prices influence domestic LPG prices, subsidies, and profit?
 
 **Insight:** Changes in global oil prices directly affect domestic pricing, subsidy requirements, and overall business profitability.
-
+![alt text](img/img-5.png)
 ---
 
 ## Business Recommendations
