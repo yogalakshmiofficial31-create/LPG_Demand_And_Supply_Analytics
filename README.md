@@ -67,6 +67,7 @@ The project answers the following business questions:
 **Question:** Which states have the highest LPG demand?
 
 **Insight:** High-demand states require better inventory planning and cylinder allocation to reduce shortages and improve delivery performance.
+![alt text](<Screenshot 2026-07-03 074232.png>)
 
 ---
 
