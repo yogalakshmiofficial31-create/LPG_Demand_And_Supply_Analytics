@@ -1,0 +1,505 @@
+Year,Month,State,Customer_Type,Cylinders_Requested,Cylinders_Delivered,Domestic_LPG_Price,Subsidy_Amount,Iran_Israel_Conflict_Level,Strait_of_Hormuz_Status,Oil_Price_USD,Festival,Shipment_Delay_Days,Consumer_Complaints,Revenue,Profit
+2023,Jan,Tamil Nadu,Domestic,53200,53016,902,200,No Conflict,Open,76,Pongal,2,17,37217232,4093895
+2023,Jan,Karnataka,Domestic,54607,54133,898,200,No Conflict,Open,74,Pongal,4,47,37784834,4156331
+2023,Jan,Kerala,Commercial,50363,50321,902,200,No Conflict,Open,76,Pongal,2,17,35325342,3885787
+2023,Jan,Telangana,Domestic,49358,49150,898,200,No Conflict,Open,74,Pongal,2,27,34306700,3773737
+2023,Jan,Andhra Pradesh,Commercial,51078,50754,898,200,No Conflict,Open,74,Pongal,3,42,35426292,3896892
+2023,Jan,Maharashtra,Domestic,47690,47506,898,200,No Conflict,Open,74,Pongal,3,25,33159188,3647510
+2023,Jan,Gujarat,Domestic,52030,51888,902,200,No Conflict,Open,76,Pongal,4,39,36425376,4006791
+2023,Jan,Delhi,Domestic,47844,47661,898,200,No Conflict,Open,74,Pongal,2,17,33267378,3659411
+2023,Jan,West Bengal,Commercial,51427,51414,898,200,No Conflict,Open,74,Pongal,3,25,35886972,3947566
+2023,Jan,Odisha,Domestic,49616,49392,902,200,No Conflict,Open,76,Pongal,3,32,34673184,3814050
+2023,Jan,Rajasthan,Domestic,50800,50354,900,200,No Conflict,Open,75,Pongal,4,42,35247800,3877258
+2023,Jan,Uttar Pradesh,Commercial,47891,47869,900,200,No Conflict,Open,75,Pongal,2,25,33508300,3685913
+2023,Feb,Tamil Nadu,Domestic,41735,41633,906,200,No Conflict,Open,78,No Festival,2,35,29392898,3233218
+2023,Feb,Karnataka,Domestic,48723,48631,906,200,No Conflict,Open,78,No Festival,2,17,34333486,3776683
+2023,Feb,Kerala,Domestic,46031,45933,904,200,No Conflict,Open,77,No Festival,4,32,32336832,3557051
+2023,Feb,Telangana,Domestic,43738,43676,902,200,No Conflict,Open,76,No Festival,2,36,30660552,3372660
+2023,Feb,Andhra Pradesh,Domestic,43093,43066,906,200,No Conflict,Open,78,No Festival,3,41,30404596,3344505
+2023,Feb,Maharashtra,Domestic,41608,41333,900,200,No Conflict,Open,75,No Festival,3,37,28933100,3182641
+2023,Feb,Gujarat,Domestic,46057,45900,904,200,No Conflict,Open,77,No Festival,2,16,32313600,3554496
+2023,Feb,Delhi,Domestic,46639,46497,900,200,No Conflict,Open,75,No Festival,2,25,32547900,3580269
+2023,Feb,West Bengal,Commercial,43817,43809,904,200,No Conflict,Open,77,No Festival,2,24,30841536,3392568
+2023,Feb,Odisha,Domestic,45539,45266,906,200,No Conflict,Open,78,No Festival,3,42,31957796,3515357
+2023,Feb,Rajasthan,Domestic,44195,44062,898,200,No Conflict,Open,74,No Festival,3,36,30755276,3383080
+2023,Feb,Uttar Pradesh,Domestic,46038,45899,898,200,No Conflict,Open,74,No Festival,3,32,32037502,3524125
+2023,Mar,Tamil Nadu,Industrial,49011,48901,900,200,No Conflict,Open,75,Ramadan,2,27,34230700,3765377
+2023,Mar,Karnataka,Domestic,54965,54741,904,200,No Conflict,Open,77,Ramadan,2,24,38537664,4239143
+2023,Mar,Kerala,Domestic,54168,53979,906,200,No Conflict,Open,78,Ramadan,2,31,38109174,4192009
+2023,Mar,Telangana,Domestic,53340,53164,902,200,No Conflict,Open,76,Ramadan,2,18,37321128,4105324
+2023,Mar,Andhra Pradesh,Domestic,48615,48419,904,200,No Conflict,Open,77,Ramadan,4,41,34086976,3749567
+2023,Mar,Maharashtra,Domestic,50942,50906,904,200,No Conflict,Open,77,Ramadan,4,33,35837824,3942160
+2023,Mar,Gujarat,Domestic,47323,47260,906,200,No Conflict,Open,78,Ramadan,2,17,33365560,3670211
+2023,Mar,Delhi,Domestic,50940,50730,898,200,No Conflict,Open,74,Ramadan,4,33,35409540,3895049
+2023,Mar,West Bengal,Domestic,47242,46927,900,200,No Conflict,Open,75,Ramadan,4,34,32848900,3613379
+2023,Mar,Odisha,Domestic,49168,49111,902,200,No Conflict,Open,76,Ramadan,2,23,34475922,3792351
+2023,Mar,Rajasthan,Domestic,53321,53275,898,200,No Conflict,Open,74,Ramadan,4,40,37185950,4090454
+2023,Mar,Uttar Pradesh,Domestic,47958,47908,906,200,No Conflict,Open,78,Ramadan,3,27,33823048,3720535
+2023,Apr,Tamil Nadu,Industrial,51723,51554,904,200,No Conflict,Open,77,Eid,4,51,36294016,3992341
+2023,Apr,Karnataka,Domestic,50091,49784,906,200,No Conflict,Open,78,Eid,4,44,35147504,3866225
+2023,Apr,Kerala,Domestic,48882,48672,904,200,No Conflict,Open,77,Eid,4,45,34265088,3769159
+2023,Apr,Telangana,Domestic,51562,51428,904,200,No Conflict,Open,77,Eid,4,39,36205312,3982584
+2023,Apr,Andhra Pradesh,Domestic,52636,52465,898,200,No Conflict,Open,74,Eid,4,38,36620570,4028262
+2023,Apr,Maharashtra,Domestic,50758,50714,902,200,No Conflict,Open,76,Eid,3,33,35601228,3916135
+2023,Apr,Gujarat,Commercial,51240,50814,904,200,No Conflict,Open,77,Eid,4,32,35773056,3935036
+2023,Apr,Delhi,Domestic,54582,54264,900,200,No Conflict,Open,75,Eid,3,24,37984800,4178328
+2023,Apr,West Bengal,Industrial,54332,54327,900,200,No Conflict,Open,75,Eid,3,43,38028900,4183179
+2023,Apr,Odisha,Domestic,48356,48127,906,200,No Conflict,Open,78,Eid,3,44,33977662,3737542
+2023,Apr,Rajasthan,Domestic,50504,50418,900,200,No Conflict,Open,75,Eid,2,36,35292600,3882186
+2023,Apr,Uttar Pradesh,Domestic,54531,54523,900,200,No Conflict,Open,75,Eid,2,22,38166100,4198271
+2023,May,Tamil Nadu,Domestic,47930,47752,904,200,No Conflict,Open,77,No Festival,3,39,33617408,3697914
+2023,May,Karnataka,Domestic,48577,48489,900,200,No Conflict,Open,75,No Festival,2,26,33942300,3733653
+2023,May,Kerala,Domestic,44959,44898,902,200,No Conflict,Open,76,No Festival,2,25,31518396,3467023
+2023,May,Telangana,Domestic,43651,43224,902,200,No Conflict,Open,76,No Festival,4,38,30343248,3337757
+2023,May,Andhra Pradesh,Industrial,44354,44237,898,200,No Conflict,Open,74,No Festival,2,27,30877426,3396516
+2023,May,Maharashtra,Domestic,44813,44618,900,200,No Conflict,Open,75,No Festival,2,31,31232600,3435586
+2023,May,Gujarat,Domestic,48180,48075,898,200,No Conflict,Open,74,No Festival,2,35,33556350,3691198
+2023,May,Delhi,Commercial,42740,42730,904,200,No Conflict,Open,77,No Festival,2,23,30081920,3309011
+2023,May,West Bengal,Domestic,48754,48527,904,200,No Conflict,Open,77,No Festival,2,19,34163008,3757930
+2023,May,Odisha,Domestic,42092,41988,900,200,No Conflict,Open,75,No Festival,4,43,29391600,3233076
+2023,May,Rajasthan,Industrial,46998,46863,902,200,No Conflict,Open,76,No Festival,3,40,32897826,3618760
+2023,May,Uttar Pradesh,Commercial,47792,47632,900,200,No Conflict,Open,75,No Festival,2,20,33342400,3667664
+2023,Jun,Tamil Nadu,Domestic,46542,46435,900,200,No Conflict,Open,75,No Festival,3,36,32504500,3575495
+2023,Jun,Karnataka,Domestic,41548,41538,904,200,No Conflict,Open,77,No Festival,3,32,29242752,3216702
+2023,Jun,Kerala,Domestic,43432,43146,898,200,No Conflict,Open,74,No Festival,4,41,30115908,3312749
+2023,Jun,Telangana,Domestic,47337,47161,906,200,No Conflict,Open,78,No Festival,2,25,33295666,3662523
+2023,Jun,Andhra Pradesh,Commercial,46672,46560,906,200,No Conflict,Open,78,No Festival,2,34,32871360,3615849
+2023,Jun,Maharashtra,Commercial,47640,47445,900,200,No Conflict,Open,75,No Festival,3,43,33211500,3653265
+2023,Jun,Gujarat,Industrial,46752,46732,906,200,No Conflict,Open,78,No Festival,2,16,32992792,3629207
+2023,Jun,Delhi,Commercial,47026,46856,906,200,No Conflict,Open,78,No Festival,4,40,33080336,3638836
+2023,Jun,West Bengal,Domestic,48224,48010,902,200,No Conflict,Open,76,No Festival,3,25,33703020,3707332
+2023,Jun,Odisha,Commercial,42268,41871,904,200,No Conflict,Open,77,No Festival,4,45,29477184,3242490
+2023,Jun,Rajasthan,Domestic,41298,41056,898,200,No Conflict,Open,74,No Festival,3,37,28657088,3152279
+2023,Jun,Uttar Pradesh,Domestic,47683,47660,902,200,No Conflict,Open,76,No Festival,3,37,33457320,3680305
+2023,Jul,Tamil Nadu,Domestic,42366,42270,904,200,No Conflict,Open,77,No Festival,2,35,29758080,3273388
+2023,Jul,Karnataka,Domestic,42730,42257,906,200,No Conflict,Open,78,No Festival,4,44,29833442,3281678
+2023,Jul,Kerala,Industrial,42600,42342,902,200,No Conflict,Open,76,No Festival,4,49,29724084,3269649
+2023,Jul,Telangana,Commercial,46327,45983,906,200,No Conflict,Open,78,No Festival,3,27,32463998,3571039
+2023,Jul,Andhra Pradesh,Domestic,48596,48407,904,200,No Conflict,Open,77,No Festival,2,27,34078528,3748638
+2023,Jul,Maharashtra,Commercial,46359,46251,900,200,No Conflict,Open,75,No Festival,2,19,32375700,3561327
+2023,Jul,Gujarat,Domestic,46023,45773,900,200,No Conflict,Open,75,No Festival,3,37,32041100,3524521
+2023,Jul,Delhi,Domestic,48550,48209,904,200,No Conflict,Open,77,No Festival,4,43,33939136,3733304
+2023,Jul,West Bengal,Domestic,45366,45211,906,200,No Conflict,Open,78,No Festival,3,33,31918966,3511086
+2023,Jul,Odisha,Commercial,48381,48298,906,200,No Conflict,Open,78,No Festival,2,22,34098388,3750822
+2023,Jul,Rajasthan,Commercial,45612,45265,906,200,No Conflict,Open,78,No Festival,3,36,31957090,3515279
+2023,Jul,Uttar Pradesh,Domestic,46182,45965,906,200,No Conflict,Open,78,No Festival,2,33,32451290,3569641
+2023,Aug,Tamil Nadu,Commercial,42646,42476,898,200,No Conflict,Open,74,No Festival,4,37,29648248,3261307
+2023,Aug,Karnataka,Commercial,44715,44475,898,200,No Conflict,Open,74,No Festival,4,52,31043550,3414790
+2023,Aug,Kerala,Commercial,41558,41427,906,200,No Conflict,Open,78,No Festival,3,44,29247462,3217220
+2023,Aug,Telangana,Domestic,48793,48584,906,200,No Conflict,Open,78,No Festival,2,30,34300304,3773033
+2023,Aug,Andhra Pradesh,Domestic,48630,48509,906,200,No Conflict,Open,78,No Festival,2,30,34247354,3767208
+2023,Aug,Maharashtra,Industrial,47798,47444,906,200,No Conflict,Open,78,No Festival,4,49,33495464,3684501
+2023,Aug,Gujarat,Domestic,47133,47103,904,200,No Conflict,Open,77,No Festival,2,34,33160512,3647656
+2023,Aug,Delhi,Domestic,45813,45791,902,200,No Conflict,Open,76,No Festival,2,34,32145282,3535981
+2023,Aug,West Bengal,Domestic,45854,45696,906,200,No Conflict,Open,78,No Festival,3,32,32261376,3548751
+2023,Aug,Odisha,Industrial,42058,41743,898,200,No Conflict,Open,74,No Festival,4,41,29136614,3205027
+2023,Aug,Rajasthan,Domestic,46430,46413,902,200,No Conflict,Open,76,No Festival,2,28,32581926,3584011
+2023,Aug,Uttar Pradesh,Domestic,46426,46414,906,200,No Conflict,Open,78,No Festival,2,36,32768284,3604511
+2023,Sep,Tamil Nadu,Domestic,41541,41473,900,200,No Conflict,Open,75,No Festival,3,40,29031100,3193421
+2023,Sep,Karnataka,Commercial,46446,46004,902,200,No Conflict,Open,76,No Festival,4,41,32294808,3552428
+2023,Sep,Kerala,Domestic,46378,46209,904,200,No Conflict,Open,77,No Festival,2,27,32531136,3578424
+2023,Sep,Telangana,Domestic,42228,42145,900,200,No Conflict,Open,75,No Festival,4,40,29501500,3245165
+2023,Sep,Andhra Pradesh,Domestic,44009,43706,900,200,No Conflict,Open,75,No Festival,3,36,30594200,3365362
+2023,Sep,Maharashtra,Domestic,41347,41098,904,200,No Conflict,Open,77,No Festival,4,40,28932992,3182629
+2023,Sep,Gujarat,Commercial,48932,48529,904,200,No Conflict,Open,77,No Festival,4,38,34164416,3758085
+2023,Sep,Delhi,Domestic,44730,44567,906,200,No Conflict,Open,78,No Festival,2,23,31464302,3461073
+2023,Sep,West Bengal,Commercial,46964,46932,904,200,No Conflict,Open,77,No Festival,2,31,33040128,3634414
+2023,Sep,Odisha,Domestic,46678,46678,898,200,No Conflict,Open,74,No Festival,4,33,32581244,3583936
+2023,Sep,Rajasthan,Domestic,44985,44760,898,200,No Conflict,Open,74,No Festival,2,36,31242480,3436672
+2023,Sep,Uttar Pradesh,Commercial,47426,47338,902,200,No Conflict,Open,76,No Festival,4,34,33231276,3655440
+2023,Oct,Tamil Nadu,Domestic,49821,49558,898,200,No Conflict,Open,74,Diwali,3,43,34591484,3805063
+2023,Oct,Karnataka,Domestic,53627,53541,902,200,No Conflict,Open,76,Diwali,3,32,37585782,4134436
+2023,Oct,Kerala,Domestic,47941,47756,900,200,No Conflict,Open,75,Diwali,4,47,33429200,3677212
+2023,Oct,Telangana,Domestic,52465,52279,904,200,No Conflict,Open,77,Diwali,3,26,36804416,4048485
+2023,Oct,Andhra Pradesh,Commercial,52764,52759,902,200,No Conflict,Open,76,Diwali,3,25,37036818,4074049
+2023,Oct,Maharashtra,Commercial,48171,48109,906,200,No Conflict,Open,78,Diwali,3,36,33964954,3736144
+2023,Oct,Gujarat,Domestic,48954,48502,906,200,No Conflict,Open,78,Diwali,4,36,34242412,3766665
+2023,Oct,Delhi,Domestic,53944,53719,906,200,No Conflict,Open,78,Diwali,2,33,37925614,4171817
+2023,Oct,West Bengal,Domestic,53550,53269,904,200,No Conflict,Open,77,Diwali,3,38,37501376,4125151
+2023,Oct,Odisha,Domestic,53673,53412,904,200,No Conflict,Open,77,Diwali,3,36,37602048,4136225
+2023,Oct,Rajasthan,Commercial,53244,53155,898,200,No Conflict,Open,74,Diwali,2,31,37102190,4081240
+2023,Oct,Uttar Pradesh,Domestic,52201,52122,898,200,No Conflict,Open,74,Diwali,4,48,36381156,4001927
+2023,Nov,Tamil Nadu,Domestic,42973,42863,902,200,No Conflict,Open,76,No Festival,3,36,30089826,3309880
+2023,Nov,Karnataka,Domestic,46938,46630,902,200,No Conflict,Open,76,No Festival,3,44,32734260,3600768
+2023,Nov,Kerala,Domestic,47090,46808,900,200,No Conflict,Open,75,No Festival,3,28,32765600,3604216
+2023,Nov,Telangana,Industrial,42755,42625,898,200,No Conflict,Open,74,No Festival,2,27,29752250,3272747
+2023,Nov,Andhra Pradesh,Commercial,48376,48346,898,200,No Conflict,Open,74,No Festival,2,28,33745508,3712005
+2023,Nov,Maharashtra,Domestic,47332,47152,904,200,No Conflict,Open,77,No Festival,3,38,33195008,3651450
+2023,Nov,Gujarat,Domestic,42357,41943,906,200,No Conflict,Open,78,No Festival,4,49,29611758,3257293
+2023,Nov,Delhi,Domestic,47314,47042,904,200,No Conflict,Open,77,No Festival,4,52,33117568,3642932
+2023,Nov,West Bengal,Domestic,41542,41496,904,200,No Conflict,Open,77,No Festival,3,42,29213184,3213450
+2023,Nov,Odisha,Domestic,43173,43065,906,200,No Conflict,Open,78,No Festival,2,23,30403890,3344427
+2023,Nov,Rajasthan,Domestic,46140,45811,902,200,No Conflict,Open,76,No Festival,4,34,32159322,3537525
+2023,Nov,Uttar Pradesh,Domestic,42485,42241,906,200,No Conflict,Open,78,No Festival,3,42,29822146,3280436
+2023,Dec,Tamil Nadu,Commercial,48015,47797,902,200,No Conflict,Open,76,Christmas,3,26,33553494,3690884
+2023,Dec,Karnataka,Domestic,54005,53921,906,200,No Conflict,Open,78,Christmas,3,39,38068226,4187504
+2023,Dec,Kerala,Domestic,53329,53211,898,200,No Conflict,Open,74,Christmas,4,48,37141278,4085540
+2023,Dec,Telangana,Domestic,47666,47346,900,200,No Conflict,Open,75,Christmas,4,32,33142200,3645642
+2023,Dec,Andhra Pradesh,Domestic,51891,51872,902,200,No Conflict,Open,76,Christmas,2,31,36414144,4005555
+2023,Dec,Maharashtra,Domestic,49410,49187,904,200,No Conflict,Open,77,Christmas,2,17,34627648,3809041
+2023,Dec,Gujarat,Domestic,49848,49830,906,200,No Conflict,Open,78,Christmas,3,31,35179980,3869797
+2023,Dec,Delhi,Domestic,53658,53301,900,200,No Conflict,Open,75,Christmas,3,42,37310700,4104177
+2023,Dec,West Bengal,Commercial,47110,46882,898,200,No Conflict,Open,74,Christmas,4,32,32723636,3599599
+2023,Dec,Odisha,Commercial,52309,52266,904,200,No Conflict,Open,77,Christmas,2,33,36795264,4047479
+2023,Dec,Rajasthan,Domestic,51056,50957,902,200,No Conflict,Open,76,Christmas,2,23,35771814,3934899
+2023,Dec,Uttar Pradesh,Domestic,52403,52341,906,200,No Conflict,Open,78,Christmas,4,49,36952746,4064802
+2024,Jan,Tamil Nadu,Domestic,48697,48690,902,200,No Conflict,Open,76,Pongal,2,20,34180380,3759841
+2024,Jan,Karnataka,Commercial,53780,53637,904,200,No Conflict,Open,77,Pongal,4,48,37760448,4153649
+2024,Jan,Kerala,Domestic,47633,47406,906,200,No Conflict,Open,78,Pongal,3,26,33468636,3681549
+2024,Jan,Telangana,Domestic,51990,51832,900,200,No Conflict,Open,75,Pongal,4,40,36282400,3991064
+2024,Jan,Andhra Pradesh,Industrial,53554,53223,906,200,No Conflict,Open,78,Pongal,4,35,37575438,4133298
+2024,Jan,Maharashtra,Domestic,52657,52238,906,200,No Conflict,Open,78,Pongal,4,36,36880028,4056803
+2024,Jan,Gujarat,Industrial,50855,50786,900,200,No Conflict,Open,75,Pongal,2,36,35550200,3910522
+2024,Jan,Delhi,Domestic,47577,47532,902,200,No Conflict,Open,76,Pongal,3,41,33367464,3670421
+2024,Jan,West Bengal,Domestic,54389,54329,900,200,No Conflict,Open,75,Pongal,3,32,38030300,4183333
+2024,Jan,Odisha,Domestic,52339,52259,902,200,No Conflict,Open,76,Pongal,3,30,36685818,4035439
+2024,Jan,Rajasthan,Domestic,48574,48104,900,200,No Conflict,Open,75,Pongal,4,41,33672800,3704008
+2024,Jan,Uttar Pradesh,Domestic,51234,51092,898,200,No Conflict,Open,74,Pongal,4,51,35662216,3922843
+2024,Feb,Tamil Nadu,Commercial,41658,41339,900,200,No Conflict,Open,75,No Festival,4,40,28937300,3183103
+2024,Feb,Karnataka,Domestic,45724,45439,898,200,No Conflict,Open,74,No Festival,3,28,31716422,3488806
+2024,Feb,Kerala,Domestic,44068,43842,906,200,No Conflict,Open,78,No Festival,2,18,30952452,3404769
+2024,Feb,Telangana,Domestic,42166,41690,898,200,No Conflict,Open,74,No Festival,4,46,29099620,3200958
+2024,Feb,Andhra Pradesh,Commercial,42664,42349,902,200,No Conflict,Open,76,No Festival,3,40,29728998,3270189
+2024,Feb,Maharashtra,Domestic,41397,41351,902,200,No Conflict,Open,76,No Festival,3,31,29028402,3193124
+2024,Feb,Gujarat,Domestic,45542,45149,906,200,No Conflict,Open,78,No Festival,4,49,31875194,3506271
+2024,Feb,Delhi,Domestic,46163,45753,898,200,No Conflict,Open,74,No Festival,4,41,31935594,3512915
+2024,Feb,West Bengal,Domestic,45488,45342,906,200,No Conflict,Open,78,No Festival,3,28,32011452,3521259
+2024,Feb,Odisha,Domestic,46202,45911,906,200,No Conflict,Open,78,No Festival,4,32,32413166,3565448
+2024,Feb,Rajasthan,Domestic,48039,47566,902,200,No Conflict,Open,76,No Festival,4,38,33391332,3673046
+2024,Feb,Uttar Pradesh,Industrial,41207,40961,904,200,No Conflict,Open,77,No Festival,4,34,28836544,3172019
+2024,Mar,Tamil Nadu,Domestic,48032,47832,904,200,No Conflict,Open,77,Ramadan,2,31,33673728,3704110
+2024,Mar,Karnataka,Domestic,50136,49656,900,200,No Conflict,Open,75,Ramadan,4,36,34759200,3823512
+2024,Mar,Kerala,Domestic,52115,51923,898,200,No Conflict,Open,74,Ramadan,2,23,36242254,3986647
+2024,Mar,Telangana,Domestic,49740,49513,900,200,No Conflict,Open,75,Ramadan,4,37,34659100,3812501
+2024,Mar,Andhra Pradesh,Commercial,50157,49874,902,200,No Conflict,Open,76,Ramadan,4,46,35011548,3851270
+2024,Mar,Maharashtra,Domestic,53836,53423,902,200,No Conflict,Open,76,Ramadan,4,48,37502946,4125324
+2024,Mar,Gujarat,Domestic,48808,48526,902,200,No Conflict,Open,76,Ramadan,4,43,34065252,3747177
+2024,Mar,Delhi,Domestic,49296,49007,898,200,No Conflict,Open,74,Ramadan,3,34,34206886,3762757
+2024,Mar,West Bengal,Industrial,48128,47865,898,200,No Conflict,Open,74,Ramadan,3,27,33409770,3675074
+2024,Mar,Odisha,Domestic,51501,51356,898,200,No Conflict,Open,74,Ramadan,2,31,35846488,3943113
+2024,Mar,Rajasthan,Domestic,49401,49273,904,200,No Conflict,Open,77,Ramadan,2,31,34688192,3815701
+2024,Mar,Uttar Pradesh,Industrial,47712,47534,902,200,No Conflict,Open,76,Ramadan,3,29,33368868,3670575
+2024,Apr,Tamil Nadu,Commercial,52264,52077,898,200,No Conflict,Open,74,Eid,2,22,36349746,3998472
+2024,Apr,Karnataka,Commercial,50191,49833,902,200,No Conflict,Open,76,Eid,3,24,34982766,3848104
+2024,Apr,Kerala,Domestic,49490,49409,898,200,No Conflict,Open,74,Eid,3,43,34487482,3793623
+2024,Apr,Telangana,Domestic,52857,52681,906,200,No Conflict,Open,78,Eid,2,24,37192786,4091206
+2024,Apr,Andhra Pradesh,Domestic,50354,50177,900,200,No Conflict,Open,75,Eid,3,40,35123900,3863629
+2024,Apr,Maharashtra,Domestic,50237,50222,906,200,No Conflict,Open,78,Eid,2,20,35456732,3900240
+2024,Apr,Gujarat,Commercial,51013,50800,906,200,No Conflict,Open,78,Eid,3,28,35864800,3945128
+2024,Apr,Delhi,Commercial,49370,49269,906,200,No Conflict,Open,78,Eid,3,37,34783914,3826230
+2024,Apr,West Bengal,Domestic,49737,49644,904,200,No Conflict,Open,77,Eid,3,30,34949376,3844431
+2024,Apr,Odisha,Domestic,53032,53020,902,200,No Conflict,Open,76,Eid,3,33,37220040,4094204
+2024,Apr,Rajasthan,Domestic,52424,52416,904,200,No Conflict,Open,77,Eid,2,18,36900864,4059095
+2024,Apr,Uttar Pradesh,Domestic,47408,47208,906,200,No Conflict,Open,78,Eid,3,26,33328848,3666173
+2024,May,Tamil Nadu,Domestic,48244,47823,904,200,No Conflict,Open,77,No Festival,4,32,33667392,3703413
+2024,May,Karnataka,Commercial,43172,43045,898,200,No Conflict,Open,74,No Festival,3,39,30045410,3304995
+2024,May,Kerala,Domestic,48033,47974,898,200,No Conflict,Open,74,No Festival,3,37,33485852,3683443
+2024,May,Telangana,Industrial,43455,43431,900,200,No Conflict,Open,75,No Festival,4,38,30401700,3344187
+2024,May,Andhra Pradesh,Domestic,44259,43928,902,200,No Conflict,Open,76,No Festival,4,40,30837456,3392120
+2024,May,Maharashtra,Commercial,48815,48724,902,200,No Conflict,Open,76,No Festival,2,18,34204248,3762467
+2024,May,Gujarat,Industrial,47445,47414,904,200,No Conflict,Open,77,No Festival,4,48,33379456,3671740
+2024,May,Delhi,Domestic,42443,42120,904,200,No Conflict,Open,77,No Festival,4,39,29652480,3261772
+2024,May,West Bengal,Domestic,44500,44280,902,200,No Conflict,Open,76,No Festival,2,23,31084560,3419301
+2024,May,Odisha,Commercial,45225,45029,900,200,No Conflict,Open,75,No Festival,2,19,31520300,3467233
+2024,May,Rajasthan,Industrial,44310,43925,902,200,No Conflict,Open,76,No Festival,4,34,30835350,3391888
+2024,May,Uttar Pradesh,Domestic,46281,46278,898,200,No Conflict,Open,74,No Festival,4,33,32302044,3553224
+2024,Jun,Tamil Nadu,Domestic,41026,40833,904,200,No Conflict,Open,77,No Festival,4,44,28746432,3162107
+2024,Jun,Karnataka,Domestic,42128,41784,900,200,No Conflict,Open,75,No Festival,3,38,29248800,3217368
+2024,Jun,Kerala,Domestic,43125,43003,904,200,No Conflict,Open,77,No Festival,3,36,30274112,3330152
+2024,Jun,Telangana,Industrial,48754,48730,898,200,No Conflict,Open,74,No Festival,2,21,34013540,3741489
+2024,Jun,Andhra Pradesh,Commercial,44769,44744,906,200,No Conflict,Open,78,No Festival,2,18,31589264,3474819
+2024,Jun,Maharashtra,Domestic,45725,45711,900,200,No Conflict,Open,75,No Festival,3,35,31997700,3519747
+2024,Jun,Gujarat,Industrial,43255,43163,898,200,No Conflict,Open,74,No Festival,4,49,30127774,3314055
+2024,Jun,Delhi,Domestic,42583,42509,900,200,No Conflict,Open,75,No Festival,3,37,29756300,3273193
+2024,Jun,West Bengal,Domestic,45465,45217,902,200,No Conflict,Open,76,No Festival,4,34,31742334,3491656
+2024,Jun,Odisha,Domestic,48231,48061,898,200,No Conflict,Open,74,No Festival,2,26,33546578,3690123
+2024,Jun,Rajasthan,Domestic,47523,47299,898,200,No Conflict,Open,74,No Festival,2,19,33014702,3631617
+2024,Jun,Uttar Pradesh,Domestic,47006,46945,902,200,No Conflict,Open,76,No Festival,2,29,32955390,3625092
+2024,Jul,Tamil Nadu,Domestic,47526,47492,900,200,No Conflict,Open,75,No Festival,3,41,33244400,3656884
+2024,Jul,Karnataka,Industrial,44440,44403,906,200,No Conflict,Open,78,No Festival,2,28,31348518,3448336
+2024,Jul,Kerala,Domestic,48686,48323,898,200,No Conflict,Open,74,No Festival,4,50,33729454,3710239
+2024,Jul,Telangana,Domestic,44092,43884,902,200,No Conflict,Open,76,No Festival,2,27,30806568,3388722
+2024,Jul,Andhra Pradesh,Domestic,48243,48093,898,200,No Conflict,Open,74,No Festival,2,21,33568914,3692580
+2024,Jul,Maharashtra,Commercial,48348,48333,900,200,No Conflict,Open,75,No Festival,3,24,33833100,3721641
+2024,Jul,Gujarat,Domestic,46550,46097,904,200,No Conflict,Open,77,No Festival,4,45,32452288,3569751
+2024,Jul,Delhi,Industrial,47328,47101,904,200,No Conflict,Open,77,No Festival,2,21,33159104,3647501
+2024,Jul,West Bengal,Domestic,48766,48476,900,200,No Conflict,Open,75,No Festival,4,50,33933200,3732652
+2024,Jul,Odisha,Domestic,44682,44590,902,200,No Conflict,Open,76,No Festival,3,24,31302180,3443239
+2024,Jul,Rajasthan,Domestic,41689,41537,902,200,No Conflict,Open,76,No Festival,2,16,29158974,3207487
+2024,Jul,Uttar Pradesh,Domestic,42464,42453,906,200,No Conflict,Open,78,No Festival,2,22,29971818,3296899
+2024,Aug,Tamil Nadu,Domestic,46762,46540,898,200,No Conflict,Open,74,No Festival,2,19,32484920,3573341
+2024,Aug,Karnataka,Domestic,46219,45851,898,200,No Conflict,Open,74,No Festival,4,39,32003998,3520439
+2024,Aug,Kerala,Industrial,41146,41119,900,200,No Conflict,Open,75,No Festival,3,24,28783300,3166163
+2024,Aug,Telangana,Domestic,42661,42645,898,200,No Conflict,Open,74,No Festival,4,44,29766210,3274283
+2024,Aug,Andhra Pradesh,Domestic,44652,44435,904,200,No Conflict,Open,77,No Festival,3,32,31282240,3441046
+2024,Aug,Maharashtra,Domestic,44478,44317,904,200,No Conflict,Open,77,No Festival,2,30,31199168,3431908
+2024,Aug,Gujarat,Industrial,46739,46517,900,200,No Conflict,Open,75,No Festival,2,35,32561900,3581809
+2024,Aug,Delhi,Industrial,47718,47547,900,200,No Conflict,Open,75,No Festival,3,41,33282900,3661119
+2024,Aug,West Bengal,Domestic,46560,46115,902,200,No Conflict,Open,76,No Festival,4,51,32372730,3561000
+2024,Aug,Odisha,Domestic,45340,44871,906,200,No Conflict,Open,78,No Festival,4,44,31678926,3484681
+2024,Aug,Rajasthan,Domestic,48747,48461,900,200,No Conflict,Open,75,No Festival,3,43,33922700,3731497
+2024,Aug,Uttar Pradesh,Commercial,47476,47119,906,200,No Conflict,Open,78,No Festival,3,31,33266014,3659261
+2024,Sep,Tamil Nadu,Industrial,41631,41533,898,200,No Conflict,Open,74,No Festival,3,32,28990034,3188903
+2024,Sep,Karnataka,Industrial,46296,46260,898,200,No Conflict,Open,74,No Festival,2,25,32289480,3551842
+2024,Sep,Kerala,Domestic,44445,44339,902,200,No Conflict,Open,76,No Festival,3,41,31125978,3423857
+2024,Sep,Telangana,Industrial,41554,41163,906,200,No Conflict,Open,78,No Festival,4,49,29061078,3196718
+2024,Sep,Andhra Pradesh,Domestic,48753,48291,904,200,No Conflict,Open,77,No Festival,4,50,33996864,3739655
+2024,Sep,Maharashtra,Domestic,47591,47403,900,200,No Conflict,Open,75,No Festival,2,32,33182100,3650031
+2024,Sep,Gujarat,Domestic,45362,45236,904,200,No Conflict,Open,77,No Festival,4,45,31846144,3503075
+2024,Sep,Delhi,Commercial,48065,47994,898,200,No Conflict,Open,74,No Festival,2,22,33499812,3684979
+2024,Sep,West Bengal,Commercial,47521,47509,898,200,No Conflict,Open,74,No Festival,2,23,33161282,3647741
+2024,Sep,Odisha,Commercial,43721,43538,904,200,No Conflict,Open,77,No Festival,4,41,30650752,3371582
+2024,Sep,Rajasthan,Domestic,47955,47809,904,200,No Conflict,Open,77,No Festival,2,19,33657536,3702328
+2024,Sep,Uttar Pradesh,Industrial,42250,41974,900,200,No Conflict,Open,75,No Festival,3,32,29381800,3231998
+2024,Oct,Tamil Nadu,Domestic,52772,52042,937,200,Medium,Delayed,92,Diwali,7,61,38354954,4219044
+2024,Oct,Karnataka,Domestic,51550,51447,930,200,Medium,Delayed,89,Diwali,8,71,37556310,4131194
+2024,Oct,Kerala,Commercial,50513,50366,933,200,Medium,Delayed,90,Diwali,8,70,36918278,4061010
+2024,Oct,Telangana,Industrial,48664,48336,939,200,Medium,Delayed,93,Diwali,6,54,35720304,3929233
+2024,Oct,Andhra Pradesh,Domestic,47592,47525,933,200,Medium,Delayed,90,Diwali,6,55,34835825,3831940
+2024,Oct,Maharashtra,Domestic,51510,51423,933,200,Medium,Delayed,90,Diwali,7,75,37693059,4146236
+2024,Oct,Gujarat,Domestic,47034,46904,937,200,Medium,Delayed,92,Diwali,6,52,34568248,3802507
+2024,Oct,Delhi,Domestic,54999,54565,930,200,Medium,Delayed,89,Diwali,8,80,39832450,4381569
+2024,Oct,West Bengal,Industrial,52394,52284,939,200,Medium,Delayed,93,Diwali,8,76,38637876,4250166
+2024,Oct,Odisha,Industrial,48727,48209,937,200,Medium,Delayed,92,Diwali,8,80,35530033,3908303
+2024,Oct,Rajasthan,Domestic,51593,50731,933,200,Medium,Delayed,90,Diwali,8,71,37185823,4090440
+2024,Oct,Uttar Pradesh,Commercial,53839,53744,930,200,Medium,Delayed,89,Diwali,6,57,39233120,4315643
+2024,Nov,Tamil Nadu,Domestic,41292,41036,937,200,Medium,Delayed,92,No Festival,7,69,30243532,3326788
+2024,Nov,Karnataka,Domestic,43018,42184,933,200,Medium,Delayed,90,No Festival,8,79,30920872,3401295
+2024,Nov,Kerala,Domestic,41201,40964,935,200,Medium,Delayed,91,No Festival,8,65,30108540,3311939
+2024,Nov,Telangana,Domestic,44178,43449,935,200,Medium,Delayed,91,No Festival,8,69,31935015,3512851
+2024,Nov,Andhra Pradesh,Domestic,48158,47617,939,200,Medium,Delayed,93,No Festival,6,59,35188963,3870785
+2024,Nov,Maharashtra,Domestic,43700,43289,930,200,Medium,Delayed,89,No Festival,6,68,31600970,3476106
+2024,Nov,Gujarat,Industrial,44580,44448,933,200,Medium,Delayed,90,No Festival,8,70,32580384,3583842
+2024,Nov,Delhi,Domestic,44112,43708,935,200,Medium,Delayed,91,No Festival,8,71,32125380,3533791
+2024,Nov,West Bengal,Commercial,43119,42279,939,200,Medium,Delayed,93,No Festival,7,73,31244181,3436859
+2024,Nov,Odisha,Domestic,44289,44187,933,200,Medium,Delayed,90,No Festival,6,59,32389071,3562797
+2024,Nov,Rajasthan,Domestic,47184,46507,939,200,Medium,Delayed,93,No Festival,7,58,34368673,3780554
+2024,Nov,Uttar Pradesh,Commercial,42730,42643,937,200,Medium,Delayed,92,No Festival,8,79,31427891,3457068
+2024,Dec,Tamil Nadu,Domestic,48247,48187,937,200,Medium,Delayed,92,Christmas,6,67,35513819,3906520
+2024,Dec,Karnataka,Domestic,49022,48881,933,200,Medium,Delayed,90,Christmas,7,69,35829773,3941275
+2024,Dec,Kerala,Industrial,47108,46763,935,200,Medium,Delayed,91,Christmas,7,61,34370805,3780788
+2024,Dec,Telangana,Domestic,52072,51843,935,200,Medium,Delayed,91,Christmas,8,73,38104605,4191506
+2024,Dec,Andhra Pradesh,Domestic,50478,50277,937,200,Medium,Delayed,92,Christmas,7,68,37054149,4075956
+2024,Dec,Maharashtra,Domestic,54893,54427,939,200,Medium,Delayed,93,Christmas,6,66,40221553,4424370
+2024,Dec,Gujarat,Domestic,52620,52186,939,200,Medium,Delayed,93,Christmas,8,73,38565454,4242199
+2024,Dec,Delhi,Domestic,51801,51319,937,200,Medium,Delayed,92,Christmas,7,62,37822103,4160431
+2024,Dec,West Bengal,Domestic,53237,53232,937,200,Medium,Delayed,92,Christmas,6,55,39231984,4315518
+2024,Dec,Odisha,Domestic,49516,48905,939,200,Medium,Delayed,93,Christmas,6,52,36140795,3975487
+2024,Dec,Rajasthan,Commercial,53880,53473,930,200,Medium,Delayed,89,Christmas,6,58,39035290,4293881
+2024,Dec,Uttar Pradesh,Domestic,54861,54324,933,200,Medium,Delayed,90,Christmas,8,66,39819492,4380144
+2025,Jan,Tamil Nadu,Domestic,51668,51417,939,300,Medium,Delayed,93,Pongal,8,79,32855463,3614100
+2025,Jan,Karnataka,Domestic,53238,52482,939,300,Medium,Delayed,93,Pongal,7,63,33535998,3688959
+2025,Jan,Kerala,Domestic,51821,51239,933,300,Medium,Delayed,90,Pongal,8,72,32434287,3567771
+2025,Jan,Telangana,Domestic,48286,47593,935,300,Medium,Delayed,91,Pongal,8,79,30221555,3324371
+2025,Jan,Andhra Pradesh,Industrial,47257,47166,933,300,Medium,Delayed,90,Pongal,7,57,29856078,3284168
+2025,Jan,Maharashtra,Domestic,53371,53253,939,300,Medium,Delayed,93,Pongal,6,62,34028667,3743153
+2025,Jan,Gujarat,Commercial,52868,52250,933,300,Medium,Delayed,90,Pongal,7,67,33074250,3638167
+2025,Jan,Delhi,Domestic,48879,48432,935,300,Medium,Delayed,91,Pongal,7,71,30754320,3382975
+2025,Jan,West Bengal,Domestic,49323,48692,937,300,Medium,Delayed,92,Pongal,6,52,31016804,3411848
+2025,Jan,Odisha,Domestic,53269,53113,933,300,Medium,Delayed,90,Pongal,8,66,33620529,3698258
+2025,Jan,Rajasthan,Domestic,54205,53900,930,300,Medium,Delayed,89,Pongal,7,64,33957000,3735270
+2025,Jan,Uttar Pradesh,Domestic,47918,47109,933,300,Medium,Delayed,90,Pongal,7,66,29819997,3280199
+2025,Feb,Tamil Nadu,Domestic,43384,43085,939,300,Medium,Delayed,93,No Festival,6,60,27531315,3028444
+2025,Feb,Karnataka,Commercial,47078,46522,939,300,Medium,Delayed,93,No Festival,7,64,29727558,3270031
+2025,Feb,Kerala,Domestic,41890,41889,933,300,Medium,Delayed,90,No Festival,6,54,26515737,2916731
+2025,Feb,Telangana,Domestic,41794,41252,933,300,Medium,Delayed,90,No Festival,6,57,26112516,2872376
+2025,Feb,Andhra Pradesh,Domestic,46340,45707,935,300,Medium,Delayed,91,No Festival,6,65,29023945,3192633
+2025,Feb,Maharashtra,Domestic,45586,45152,930,300,Medium,Delayed,89,No Festival,7,59,28445760,3129033
+2025,Feb,Gujarat,Domestic,47816,47373,939,300,Medium,Delayed,93,No Festival,6,53,30271347,3329848
+2025,Feb,Delhi,Domestic,42865,42371,939,300,Medium,Delayed,93,No Festival,8,64,27075069,2978257
+2025,Feb,West Bengal,Domestic,45650,45377,939,300,Medium,Delayed,93,No Festival,7,68,28995903,3189549
+2025,Feb,Odisha,Industrial,47216,46498,939,300,Medium,Delayed,93,No Festival,6,52,29712222,3268344
+2025,Feb,Rajasthan,Domestic,48046,47894,935,300,Medium,Delayed,91,No Festival,7,67,30412690,3345395
+2025,Feb,Uttar Pradesh,Domestic,41281,40521,937,300,Medium,Delayed,92,No Festival,7,57,25811877,2839306
+2025,Mar,Tamil Nadu,Domestic,54534,54327,939,300,Medium,Delayed,93,Ramadan,8,66,34714953,3818644
+2025,Mar,Karnataka,Domestic,50659,50538,930,300,Medium,Delayed,89,Ramadan,7,73,31838940,3502283
+2025,Mar,Kerala,Domestic,49846,48950,930,300,Medium,Delayed,89,Ramadan,8,75,30838500,3392235
+2025,Mar,Telangana,Domestic,49101,48695,930,300,Medium,Delayed,89,Ramadan,7,64,30677850,3374563
+2025,Mar,Andhra Pradesh,Domestic,51447,50876,937,300,Medium,Delayed,92,Ramadan,8,68,32408012,3564881
+2025,Mar,Maharashtra,Domestic,48183,48122,939,300,Medium,Delayed,93,Ramadan,7,60,30749958,3382495
+2025,Mar,Gujarat,Domestic,51329,50941,930,300,Medium,Delayed,89,Ramadan,7,69,32092830,3530211
+2025,Mar,Delhi,Domestic,47297,47230,933,300,Medium,Delayed,90,Ramadan,7,69,29896590,3288624
+2025,Mar,West Bengal,Domestic,53457,53368,937,300,Medium,Delayed,92,Ramadan,7,58,33995416,3739495
+2025,Mar,Odisha,Commercial,51067,50934,937,300,Medium,Delayed,92,Ramadan,8,66,32444958,3568945
+2025,Mar,Rajasthan,Commercial,50125,49740,933,300,Medium,Delayed,90,Ramadan,8,72,31485420,3463396
+2025,Mar,Uttar Pradesh,Domestic,54691,54340,930,300,Medium,Delayed,89,Ramadan,6,53,34234200,3765762
+2025,Apr,Tamil Nadu,Commercial,51638,51114,935,300,Medium,Delayed,91,Eid,6,49,32457390,3570312
+2025,Apr,Karnataka,Domestic,53505,53297,933,300,Medium,Delayed,90,Eid,8,68,33737001,3711070
+2025,Apr,Kerala,Commercial,51742,51420,935,300,Medium,Delayed,91,Eid,7,64,32651700,3591687
+2025,Apr,Telangana,Commercial,54747,53899,930,300,Medium,Delayed,89,Eid,8,76,33956370,3735200
+2025,Apr,Andhra Pradesh,Domestic,52250,51753,933,300,Medium,Delayed,90,Eid,6,50,32759649,3603561
+2025,Apr,Maharashtra,Domestic,51970,51612,933,300,Medium,Delayed,90,Eid,8,64,32670396,3593743
+2025,Apr,Gujarat,Domestic,47678,47436,933,300,Medium,Delayed,90,Eid,7,67,30026988,3302968
+2025,Apr,Delhi,Domestic,49769,49456,937,300,Medium,Delayed,92,Eid,8,77,31503472,3465381
+2025,Apr,West Bengal,Commercial,50634,50448,933,300,Medium,Delayed,90,Eid,7,64,31933584,3512694
+2025,Apr,Odisha,Domestic,50986,50351,933,300,Medium,Delayed,90,Eid,7,69,31872183,3505940
+2025,Apr,Rajasthan,Domestic,51152,50712,939,300,Medium,Delayed,93,Eid,7,57,32404968,3564546
+2025,Apr,Uttar Pradesh,Commercial,52121,51641,937,300,Medium,Delayed,92,Eid,6,60,32895317,3618484
+2025,May,Tamil Nadu,Domestic,42027,41239,933,300,Medium,Delayed,90,No Festival,8,68,26104287,2871471
+2025,May,Karnataka,Domestic,45184,44725,930,300,Medium,Delayed,89,No Festival,8,72,28176750,3099442
+2025,May,Kerala,Domestic,42830,42554,930,300,Medium,Delayed,89,No Festival,7,59,26809020,2948992
+2025,May,Telangana,Domestic,47621,47212,930,300,Medium,Delayed,89,No Festival,8,83,29743560,3271791
+2025,May,Andhra Pradesh,Industrial,42392,41995,933,300,Medium,Delayed,90,No Festival,8,69,26582835,2924111
+2025,May,Maharashtra,Domestic,46107,45476,933,300,Medium,Delayed,90,No Festival,8,79,28786308,3166493
+2025,May,Gujarat,Domestic,42398,41617,933,300,Medium,Delayed,90,No Festival,8,82,26343561,2897791
+2025,May,Delhi,Domestic,45832,45399,937,300,Medium,Delayed,92,No Festival,7,62,28919163,3181107
+2025,May,West Bengal,Commercial,41226,41045,939,300,Medium,Delayed,93,No Festival,6,59,26227755,2885053
+2025,May,Odisha,Commercial,43606,42768,939,300,Medium,Delayed,93,No Festival,8,65,27328752,3006162
+2025,May,Rajasthan,Domestic,41084,40484,939,300,Medium,Delayed,93,No Festival,8,79,25869276,2845620
+2025,May,Uttar Pradesh,Domestic,47913,47843,930,300,Medium,Delayed,89,No Festival,6,63,30141090,3315519
+2025,Jun,Tamil Nadu,Domestic,47292,46834,968,300,High,Restricted,106,No Festival,12,110,31285112,3441362
+2025,Jun,Karnataka,Commercial,46065,45348,963,300,High,Restricted,104,No Festival,12,99,30065724,3307229
+2025,Jun,Kerala,Domestic,41980,41137,961,300,High,Restricted,103,No Festival,12,113,27191557,2991071
+2025,Jun,Telangana,Domestic,48839,47755,959,300,High,Restricted,102,No Festival,13,124,31470545,3461759
+2025,Jun,Andhra Pradesh,Domestic,48585,47152,961,300,High,Restricted,103,No Festival,13,107,31167472,3428421
+2025,Jun,Maharashtra,Domestic,42246,41133,963,300,High,Restricted,104,No Festival,12,111,27271179,2999829
+2025,Jun,Gujarat,Domestic,43678,43149,968,300,High,Restricted,106,No Festival,13,109,28823532,3170588
+2025,Jun,Delhi,Domestic,42887,41561,966,300,High,Restricted,105,No Festival,12,116,27679626,3044758
+2025,Jun,West Bengal,Domestic,46080,45338,963,300,High,Restricted,104,No Festival,11,96,30059094,3306500
+2025,Jun,Odisha,Domestic,43580,42096,961,300,High,Restricted,103,No Festival,13,111,27825456,3060800
+2025,Jun,Rajasthan,Domestic,44324,43357,968,300,High,Restricted,106,No Festival,11,105,28962476,3185872
+2025,Jun,Uttar Pradesh,Domestic,47750,46922,961,300,High,Restricted,103,No Festival,12,115,31015442,3411698
+2025,Jul,Tamil Nadu,Commercial,45814,45288,968,300,High,Restricted,106,No Festival,12,97,30252384,3327762
+2025,Jul,Karnataka,Domestic,45808,45575,968,300,High,Restricted,106,No Festival,12,97,30444100,3348851
+2025,Jul,Kerala,Industrial,41261,40483,963,300,High,Restricted,104,No Festival,11,98,26840229,2952425
+2025,Jul,Telangana,Domestic,43402,43069,968,300,High,Restricted,106,No Festival,11,89,28770092,3164710
+2025,Jul,Andhra Pradesh,Commercial,42645,42305,968,300,High,Restricted,106,No Festival,11,99,28259740,3108571
+2025,Jul,Maharashtra,Domestic,48493,47038,963,300,High,Restricted,104,No Festival,13,106,31186194,3430481
+2025,Jul,Gujarat,Domestic,48666,48138,963,300,High,Restricted,104,No Festival,13,124,31915494,3510704
+2025,Jul,Delhi,Commercial,44642,44595,968,300,High,Restricted,106,No Festival,12,111,29789460,3276840
+2025,Jul,West Bengal,Domestic,43455,42754,961,300,High,Restricted,103,No Festival,12,115,28260394,3108643
+2025,Jul,Odisha,Commercial,43244,42918,961,300,High,Restricted,103,No Festival,11,96,28368798,3120567
+2025,Jul,Rajasthan,Domestic,45502,44126,959,300,High,Restricted,102,No Festival,13,104,29079034,3198693
+2025,Jul,Uttar Pradesh,Domestic,47731,47466,959,300,High,Restricted,102,No Festival,11,90,31280094,3440810
+2025,Aug,Tamil Nadu,Domestic,43654,42177,968,300,High,Restricted,106,No Festival,13,114,28174236,3099165
+2025,Aug,Karnataka,Domestic,44273,42962,961,300,High,Restricted,103,No Festival,13,117,28397882,3123767
+2025,Aug,Kerala,Domestic,46052,45919,961,300,High,Restricted,103,No Festival,11,108,30352459,3338770
+2025,Aug,Telangana,Domestic,41584,41474,961,300,High,Restricted,103,No Festival,12,101,27414314,3015574
+2025,Aug,Andhra Pradesh,Domestic,47937,47707,966,300,High,Restricted,105,No Festival,12,96,31772862,3495014
+2025,Aug,Maharashtra,Domestic,42596,42528,966,300,High,Restricted,105,No Festival,13,114,28323648,3115601
+2025,Aug,Gujarat,Industrial,48427,46915,961,300,High,Restricted,103,No Festival,13,123,31010815,3411189
+2025,Aug,Delhi,Domestic,47923,46985,959,300,High,Restricted,102,No Festival,12,100,30963115,3405942
+2025,Aug,West Bengal,Commercial,41041,41035,961,300,High,Restricted,103,No Festival,11,102,27124135,2983654
+2025,Aug,Odisha,Domestic,41741,41424,966,300,High,Restricted,105,No Festival,12,106,27588384,3034722
+2025,Aug,Rajasthan,Industrial,47889,46994,961,300,High,Restricted,103,No Festival,11,92,31063034,3416933
+2025,Aug,Uttar Pradesh,Domestic,42055,41365,959,300,High,Restricted,102,No Festival,12,96,27259535,2998548
+2025,Sep,Tamil Nadu,Commercial,46666,45196,961,300,High,Restricted,103,No Festival,13,121,29874556,3286201
+2025,Sep,Karnataka,Domestic,41107,40969,966,300,High,Restricted,105,No Festival,13,109,27285354,3001388
+2025,Sep,Kerala,Domestic,45182,44109,963,300,High,Restricted,104,No Festival,11,105,29244267,3216869
+2025,Sep,Telangana,Domestic,48346,47659,961,300,High,Restricted,103,No Festival,11,89,31502599,3465285
+2025,Sep,Andhra Pradesh,Domestic,41519,41166,959,300,High,Restricted,102,No Festival,13,122,27128394,2984123
+2025,Sep,Maharashtra,Domestic,44136,43811,961,300,High,Restricted,103,No Festival,13,105,28959071,3185497
+2025,Sep,Gujarat,Domestic,43322,42047,959,300,High,Restricted,102,No Festival,11,100,27708973,3047987
+2025,Sep,Delhi,Domestic,41561,40478,966,300,High,Restricted,105,No Festival,11,107,26958348,2965418
+2025,Sep,West Bengal,Domestic,42922,42650,963,300,High,Restricted,104,No Festival,13,113,28276950,3110464
+2025,Sep,Odisha,Domestic,43795,43515,961,300,High,Restricted,103,No Festival,11,104,28763415,3163975
+2025,Sep,Rajasthan,Domestic,42281,41581,966,300,High,Restricted,105,No Festival,11,106,27692946,3046224
+2025,Sep,Uttar Pradesh,Domestic,43183,42578,966,300,High,Restricted,105,No Festival,11,106,28356948,3119264
+2025,Oct,Tamil Nadu,Domestic,53499,52691,968,300,High,Restricted,106,Diwali,11,95,35197588,3871734
+2025,Oct,Karnataka,Commercial,54325,54239,959,300,High,Restricted,102,Diwali,11,105,35743501,3931785
+2025,Oct,Kerala,Commercial,47983,47804,961,300,High,Restricted,103,Diwali,11,102,31598444,3475828
+2025,Oct,Telangana,Domestic,48073,47131,966,300,High,Restricted,105,Diwali,11,96,31389246,3452817
+2025,Oct,Andhra Pradesh,Domestic,52919,51458,968,300,High,Restricted,106,Diwali,13,123,34373944,3781133
+2025,Oct,Maharashtra,Domestic,48762,48002,963,300,High,Restricted,104,Diwali,12,98,31825326,3500785
+2025,Oct,Gujarat,Industrial,49249,48820,968,300,High,Restricted,106,Diwali,13,115,32611760,3587293
+2025,Oct,Delhi,Commercial,52004,51255,968,300,High,Restricted,106,Diwali,11,97,34238340,3766217
+2025,Oct,West Bengal,Domestic,51508,50385,959,300,High,Restricted,102,Diwali,13,124,33203715,3652408
+2025,Oct,Odisha,Commercial,53104,52055,961,300,High,Restricted,103,Diwali,13,104,34408355,3784919
+2025,Oct,Rajasthan,Industrial,49728,49192,959,300,High,Restricted,102,Diwali,11,98,32417528,3565928
+2025,Oct,Uttar Pradesh,Domestic,50227,49714,963,300,High,Restricted,104,Diwali,11,89,32960382,3625642
+2025,Nov,Tamil Nadu,Commercial,41805,40739,959,300,High,Restricted,102,No Festival,12,102,26847001,2953170
+2025,Nov,Karnataka,Domestic,41794,40823,966,300,High,Restricted,105,No Festival,11,106,27188118,2990692
+2025,Nov,Kerala,Domestic,42684,42418,966,300,High,Restricted,105,No Festival,11,89,28250388,3107542
+2025,Nov,Telangana,Domestic,43094,42520,968,300,High,Restricted,106,No Festival,11,91,28403360,3124369
+2025,Nov,Andhra Pradesh,Domestic,48819,48069,961,300,High,Restricted,103,No Festival,11,98,31773609,3495096
+2025,Nov,Maharashtra,Commercial,48313,48241,966,300,High,Restricted,105,No Festival,11,105,32128506,3534135
+2025,Nov,Gujarat,Domestic,46074,45159,959,300,High,Restricted,102,No Festival,11,104,29759781,3273575
+2025,Nov,Delhi,Domestic,45055,44422,963,300,High,Restricted,104,No Festival,12,112,29451786,3239696
+2025,Nov,West Bengal,Domestic,46846,45860,959,300,High,Restricted,102,No Festival,11,101,30221740,3324391
+2025,Nov,Odisha,Domestic,46552,45488,966,300,High,Restricted,105,No Festival,13,104,30295008,3332450
+2025,Nov,Rajasthan,Domestic,46180,45324,968,300,High,Restricted,106,No Festival,11,101,30276432,3330407
+2025,Nov,Uttar Pradesh,Domestic,48253,47771,966,300,High,Restricted,105,No Festival,12,96,31815486,3499703
+2025,Dec,Tamil Nadu,Domestic,54503,53714,963,300,High,Restricted,104,Christmas,11,99,35612382,3917362
+2025,Dec,Karnataka,Domestic,51634,51563,961,300,High,Restricted,103,Christmas,13,104,34083143,3749145
+2025,Dec,Kerala,Industrial,54943,54308,959,300,High,Restricted,102,Christmas,12,102,35788972,3936786
+2025,Dec,Telangana,Commercial,48709,48657,968,300,High,Restricted,106,Christmas,13,112,32502876,3575316
+2025,Dec,Andhra Pradesh,Industrial,47777,46573,966,300,High,Restricted,105,Christmas,13,118,31017618,3411937
+2025,Dec,Maharashtra,Domestic,51991,51743,959,300,High,Restricted,102,Christmas,13,123,34098637,3750850
+2025,Dec,Gujarat,Domestic,54285,53131,968,300,High,Restricted,106,Christmas,11,88,35491508,3904065
+2025,Dec,Delhi,Commercial,51061,50165,959,300,High,Restricted,102,Christmas,13,105,33058735,3636460
+2025,Dec,West Bengal,Industrial,51888,51558,959,300,High,Restricted,102,Christmas,11,101,33976722,3737439
+2025,Dec,Odisha,Domestic,47004,46178,959,300,High,Restricted,102,Christmas,13,117,30431302,3347443
+2025,Dec,Rajasthan,Domestic,49484,48912,961,300,High,Restricted,103,Christmas,11,97,32330832,3556391
+2025,Dec,Uttar Pradesh,Commercial,53913,53452,963,300,High,Restricted,104,Christmas,11,88,35438676,3898254
+2026,Jan,Tamil Nadu,Domestic,47973,47527,963,300,High,Restricted,104,Pongal,13,118,31510401,3466144
+2026,Jan,Karnataka,Domestic,49148,48197,966,300,High,Restricted,105,Pongal,13,105,32099202,3530912
+2026,Jan,Kerala,Domestic,51811,51717,961,300,High,Restricted,103,Pongal,11,88,34184937,3760343
+2026,Jan,Telangana,Domestic,52938,51851,961,300,High,Restricted,103,Pongal,13,115,34273511,3770086
+2026,Jan,Andhra Pradesh,Domestic,54614,53851,968,300,High,Restricted,106,Pongal,11,96,35972468,3956971
+2026,Jan,Maharashtra,Domestic,51406,51221,963,300,High,Restricted,104,Pongal,13,104,33959523,3735547
+2026,Jan,Gujarat,Domestic,53982,52702,968,300,High,Restricted,106,Pongal,12,110,35204936,3872542
+2026,Jan,Delhi,Domestic,49140,47905,966,300,High,Restricted,105,Pongal,13,123,31904730,3509520
+2026,Jan,West Bengal,Domestic,47614,47183,961,300,High,Restricted,103,Pongal,11,93,31187963,3430675
+2026,Jan,Odisha,Commercial,53200,52688,968,300,High,Restricted,106,Pongal,11,106,35195584,3871514
+2026,Jan,Rajasthan,Domestic,50771,49695,961,300,High,Restricted,103,Pongal,12,102,32848395,3613323
+2026,Jan,Uttar Pradesh,Commercial,49566,49429,959,300,High,Restricted,102,Pongal,11,104,32573711,3583108
+2026,Feb,Tamil Nadu,Domestic,47969,47230,966,300,High,Restricted,105,No Festival,12,103,31455180,3460069
+2026,Feb,Karnataka,Domestic,43004,41989,963,300,High,Restricted,104,No Festival,11,106,27838707,3062257
+2026,Feb,Kerala,Domestic,42717,41527,963,300,High,Restricted,104,No Festival,12,113,27532401,3028564
+2026,Feb,Telangana,Domestic,46919,45834,968,300,High,Restricted,106,No Festival,12,108,30617112,3367882
+2026,Feb,Andhra Pradesh,Commercial,45453,44530,966,300,High,Restricted,105,No Festival,13,119,29656980,3262267
+2026,Feb,Maharashtra,Domestic,45398,45386,963,300,High,Restricted,104,No Festival,13,105,30090918,3310000
+2026,Feb,Gujarat,Domestic,43735,43229,968,300,High,Restricted,106,No Festival,11,88,28876972,3176466
+2026,Feb,Delhi,Commercial,48742,48619,961,300,High,Restricted,103,No Festival,11,96,32137159,3535087
+2026,Feb,West Bengal,Domestic,44208,43931,961,300,High,Restricted,103,No Festival,12,114,29038391,3194223
+2026,Feb,Odisha,Commercial,45663,44582,959,300,High,Restricted,102,No Festival,12,115,29379538,3231749
+2026,Feb,Rajasthan,Domestic,45568,44707,959,300,High,Restricted,102,No Festival,13,104,29461913,3240810
+2026,Feb,Uttar Pradesh,Domestic,48686,48171,968,300,High,Restricted,106,No Festival,13,111,32178228,3539605
+2026,Mar,Tamil Nadu,Domestic,47896,47015,968,300,High,Restricted,106,Ramadan,11,93,31406020,3454662
+2026,Mar,Karnataka,Domestic,54587,53098,959,300,High,Restricted,102,Ramadan,13,116,34991582,3849074
+2026,Mar,Kerala,Domestic,47340,47293,961,300,High,Restricted,103,Ramadan,11,92,31260673,3438674
+2026,Mar,Telangana,Domestic,51588,51452,966,300,High,Restricted,105,Ramadan,12,97,34267032,3769373
+2026,Mar,Andhra Pradesh,Domestic,53201,51882,961,300,High,Restricted,103,Ramadan,12,113,34294002,3772340
+2026,Mar,Maharashtra,Industrial,48238,47065,966,300,High,Restricted,105,Ramadan,11,92,31345290,3447981
+2026,Mar,Gujarat,Domestic,49017,48704,961,300,High,Restricted,103,Ramadan,11,92,32193344,3541267
+2026,Mar,Delhi,Commercial,48934,47963,961,300,High,Restricted,103,Ramadan,11,108,31703543,3487389
+2026,Mar,West Bengal,Commercial,53238,52678,966,300,High,Restricted,105,Ramadan,13,116,35083548,3859190
+2026,Mar,Odisha,Industrial,47469,46533,961,300,High,Restricted,103,Ramadan,12,116,30758313,3383414
+2026,Mar,Rajasthan,Domestic,50865,50061,963,300,High,Restricted,104,Ramadan,13,119,33190443,3650948
+2026,Mar,Uttar Pradesh,Domestic,54952,53697,968,300,High,Restricted,106,Ramadan,13,116,35869596,3945655
+2026,Apr,Tamil Nadu,Domestic,52986,52372,968,300,High,Restricted,106,Eid,11,103,34984496,3848294
+2026,Apr,Karnataka,Domestic,53009,52823,959,300,High,Restricted,102,Eid,11,92,34810357,3829139
+2026,Apr,Kerala,Domestic,47385,46570,961,300,High,Restricted,103,Eid,12,102,30782770,3386104
+2026,Apr,Telangana,Domestic,50302,49920,966,300,High,Restricted,105,Eid,11,95,33246720,3657139
+2026,Apr,Andhra Pradesh,Domestic,51169,49883,961,300,High,Restricted,103,Eid,11,99,32972663,3626992
+2026,Apr,Maharashtra,Commercial,52862,52489,968,300,High,Restricted,106,Eid,11,108,35062652,3856891
+2026,Apr,Gujarat,Domestic,52721,52547,959,300,High,Restricted,102,Eid,13,121,34628473,3809132
+2026,Apr,Delhi,Domestic,50741,49528,968,300,High,Restricted,106,Eid,12,96,33084704,3639317
+2026,Apr,West Bengal,Domestic,53595,53209,959,300,High,Restricted,102,Eid,12,113,35064731,3857120
+2026,Apr,Odisha,Domestic,52061,51226,966,300,High,Restricted,105,Eid,13,116,34116516,3752816
+2026,Apr,Rajasthan,Domestic,54132,53746,959,300,High,Restricted,102,Eid,12,99,35418614,3896047
+2026,Apr,Uttar Pradesh,Domestic,53813,53646,959,300,High,Restricted,102,Eid,13,122,35352714,3888798
+2026,May,Tamil Nadu,Domestic,41348,40179,966,300,High,Restricted,105,No Festival,12,116,26759214,2943513
+2026,May,Karnataka,Domestic,47796,46458,961,300,High,Restricted,103,No Festival,12,116,30708738,3377961
+2026,May,Kerala,Domestic,47795,47024,966,300,High,Restricted,105,No Festival,11,107,31317984,3444978
+2026,May,Telangana,Domestic,44162,44055,961,300,High,Restricted,103,No Festival,13,106,29120355,3203239
+2026,May,Andhra Pradesh,Domestic,41727,41032,966,300,High,Restricted,105,No Festival,12,116,27327312,3006004
+2026,May,Maharashtra,Domestic,48257,47006,961,300,High,Restricted,103,No Festival,12,105,31070966,3417806
+2026,May,Gujarat,Industrial,42463,41771,968,300,High,Restricted,106,No Festival,11,91,27903028,3069333
+2026,May,Delhi,Domestic,43040,42690,963,300,High,Restricted,104,No Festival,13,124,28303470,3113381
+2026,May,West Bengal,Domestic,48525,47847,961,300,High,Restricted,103,No Festival,12,104,31626867,3478955
+2026,May,Odisha,Commercial,45665,44637,961,300,High,Restricted,103,No Festival,11,94,29505057,3245556
+2026,May,Rajasthan,Commercial,45706,44867,961,300,High,Restricted,103,No Festival,12,100,29657087,3262279
+2026,May,Uttar Pradesh,Domestic,41996,41672,963,300,High,Restricted,104,No Festival,13,123,27628536,3039138
+2026,Jun,Tamil Nadu,Commercial,41559,40603,966,300,High,Restricted,105,No Festival,13,109,27041598,2974575
+2026,Jun,Karnataka,Domestic,46262,45116,961,300,High,Restricted,103,No Festival,13,118,29821676,3280384
+2026,Jun,Kerala,Domestic,41968,40718,961,300,High,Restricted,103,No Festival,12,98,26914598,2960605
+2026,Jun,Telangana,Domestic,46001,44844,968,300,High,Restricted,106,No Festival,11,103,29955792,3295137
+2026,Jun,Andhra Pradesh,Domestic,44758,43846,968,300,High,Restricted,106,No Festival,12,100,29289128,3221804
+2026,Jun,Maharashtra,Domestic,42501,41326,968,300,High,Restricted,106,No Festival,11,95,27605768,3036634
+2026,Jun,Gujarat,Domestic,43148,42175,961,300,High,Restricted,103,No Festival,13,110,27877675,3066544
+2026,Jun,Delhi,Domestic,41953,41755,966,300,High,Restricted,105,No Festival,11,91,27808830,3058971
+2026,Jun,West Bengal,Domestic,42330,42009,968,300,High,Restricted,106,No Festival,13,112,28062012,3086821
+2026,Jun,Odisha,Domestic,47925,46558,963,300,High,Restricted,104,No Festival,13,124,30867954,3395474
+2026,Jun,Rajasthan,Domestic,41647,40678,966,300,High,Restricted,105,No Festival,11,94,27091548,2980070
+2026,Jun,Uttar Pradesh,Commercial,43604,42297,959,300,High,Restricted,102,No Festival,12,115,27873723,3066109
